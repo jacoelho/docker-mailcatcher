@@ -1,7 +1,7 @@
 FROM debian:wheezy
 
-ADD . /build/
-RUN /build/build.sh
+ADD . /
+RUN /build.sh && rm -fr /build
 
 EXPOSE 25 80
 
